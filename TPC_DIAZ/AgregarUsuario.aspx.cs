@@ -2,20 +2,21 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using System.Web.Services.Description;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Dominio;
-using Negocio;
 
 namespace TPC_DIAZ
 {
-    public partial class _Default : Page
+    public partial class AgregarUsuario : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-        
+
         }
 
-}
+        protected void ButtonAgregarUsuario_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
 }

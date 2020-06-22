@@ -10,7 +10,10 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
+    <%--<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+    <font></font>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+    <font></font>--%>
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
@@ -46,7 +49,6 @@
                 <%--Site Scripts--%>
             </Scripts>
         </asp:ScriptManager>
-
         <div class="navbar navbar-expand-lg bg-dark navbar-fixed-top ">
             <div class="container">
                 <div class="navbar-header">
@@ -56,19 +58,26 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <%--<a class="navbar-brand" runat="server" href="~/">Tienda</a>--%>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a runat="server" href="~/">Inicio</a></li>
-                        <li><a runat="server" href="~/Carrito">Stock</a></li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Materiales
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="ModificarMaterial.aspx">Modificar</a>
+                                <a class="dropdown-item" href="AgregarMaterial.aspx">Agregar</a>
+                            </div>
+                        </li>
+
+                        <li><a runat="server" href="AgregarUsuario.aspx">Usuarios</a></li>
+                        <li><a runat="server" href="StockMateriales.aspx">Stock</a></li>
                         <li><a runat="server" href="~/Contact">Contacto</a></li>
                     </ul>
                 </div>
-                
             </div>
-           
-            
         </div>
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">

@@ -7,7 +7,7 @@ using Dominio;
 
 namespace Negocio
 {
-    class CategoriaNegocio
+    public class CategoriaNegocio
     {
         public List<Categoria> ListarCategoria()
         {
@@ -36,6 +36,61 @@ namespace Negocio
             {
                 datos.cerrarConexion();
             }
+        }
+
+        public void EliminarCategoria(int id)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setearSP("spEliminarCategoria");
+                datos.agregarParametro("@IdCategoria", id);
+                datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
+        public void ModificarCategoria(Material categoria)
+        {
+            AccesoDatos datos = new AccesoDatos();
+
+            try
+            {
+                datos.setearSP("spModificarCategoria");
+                datos.agregarParametro("@Nombre", categoria.Nombre);
+                datos.agregarParametro("@IdCategoria", categoria.Id);
+                datos.agregarParametro("@Eliminado", categoria.Eliminado);
+                datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public void AgregarCategoria(Categoria nuevo)
+        {
+            AccesoDatos datos = new AccesoDatos();
+
+            try
+            {
+                datos.setearSP("spAgregarCategorias");
+
+                datos.agregarParametro("@Nombre", nuevo.Nombre);
+                datos.agregarParametro("@Eliminado", 0);
+                datos.ejecutarAccion();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+
         }
     }
 }

@@ -2,28 +2,80 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    <h1>Lista de Materiales</h1>
-    <%--<asp:TextBox ID="txtFiltrar" CssClass="mt-5" runat="server" placeholder="Presione 'Enter' para filtrar" OnTextChanged="Filtrar_TextChanged" />--%>
-    
-
-    <div class="card-columns" style="margin-left: 10px; margin-right: 10px; margin-top:10px;">
-        <asp:Repeater runat="server" ID="repetidor">
-            <ItemTemplate>
-                <div class="card text-center">
-                    <img src="<%#Eval("Imagen") %>" class="card-img-top" alt="..." style="min-height:375px; max-height:1000px; ">
-                    <div class="card-body">
-                        <h1 class="card-text text-left">$<%#Eval("Cantidad")%></h1>
-                        <%--<h5 class="card-text text-left" style="color:lawngreen">Envío gratis</h5>--%>
-                        <h4 class="card-title text-left"><%#Eval("Nombre")%></h4>
-                        <p class="card-text text-left"><%#Eval("Descripcion")%></p>
+    <h1>ASESORAMIENTO EN SEGURIDAD ELECTRONICA</h1>
+    <div class="row">
+        <div class="col">
+            <h3>Instalaciones</h3>
+            <div id="carouselExampleControls" class="carousel slide w-50 h-50" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="Image/InstalacionTesoro.jpg" alt="First slide" width="800" height="300">
                     </div>
-                    <%--<a class="btn btn-primary" href="Carrito.aspx?idArt=<%#Eval("Id")%>">Seleccionar</a>--%>
-                    <asp:Button ID="btnSeleccionar" Text="Seleccionar" ControlStyle-CssClass="btn btn-success mb-4" CommandArgument='<%#Eval("Id")%>' CommandName="idArt" runat="server" OnClick="btnSeleccionar_Click"  />
-                   
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="Image/InstalacionTesoroDoble.jpg" alt="Second slide" width="800" height="300">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="Image/InstalacionGaveta.jpg" alt="Third slide" width="800" height="300">
+                    </div>
                 </div>
-            </ItemTemplate>
-        </asp:Repeater>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div class="col">
+            <h3>Service</h3>
+            <div id="carouselService" class="carousel slide w-50 h-50" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="Image/InstalacionSalaTecnica.jpg" alt="First slide" width="800" height="300">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="Image/MIO.jpg" alt="Second slide" width="800" height="300">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="Image/InstalacionGaveta.jpg" alt="Third slide" width="800" height="300">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselService" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselService" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+         <div class="col">
+            <h3>Deposito</h3>
+            <div id="carouselDeposito" class="carousel slide w-50 h-50" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="Image/InstalacionSalaTecnica.jpg" alt="First slide" width="800" height="300">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="Image/MIO.jpg" alt="Second slide" width="800" height="300">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="Image/InstalacionGaveta.jpg" alt="Third slide" width="800" height="300">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselDeposito" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselDeposito" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
     </div>
-
 
 </asp:Content>

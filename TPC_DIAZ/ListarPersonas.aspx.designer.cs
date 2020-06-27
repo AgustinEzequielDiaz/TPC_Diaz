@@ -11,25 +11,25 @@ namespace TPC_DIAZ
 {
 
 
-    public partial class StockMateriales
+    public partial class ListarPersonas
     {
 
         /// <summary>
-        /// Control AgregarNuevoMaterial.
+        /// Control dgvPersona.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button AgregarNuevoMaterial;
+        protected global::System.Web.UI.WebControls.GridView dgvPersona;
 
         /// <summary>
-        /// Control repetidor.
+        /// Control ButtonPersona.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater repetidor;
+        protected global::System.Web.UI.WebControls.Button ButtonPersona;
     }
 }

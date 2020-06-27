@@ -16,7 +16,7 @@ namespace Negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearSP("spListarMateriales");
+                datos.setearSP("spListarMaterial");
                 datos.ejecutarLector();
                 while (datos.lector.Read())
                 {
@@ -75,6 +75,7 @@ namespace Negocio
                 datos.agregarParametro("@IdMaterial", material.Id);
                 datos.agregarParametro("@Descripcion", material.Descripcion);
                 datos.agregarParametro("@Imagen", material.Imagen);
+                datos.agregarParametro("@IdCategoria", material.Categoria.Id);
                 datos.agregarParametro("@Cantidad", material.Cantidad);
                 datos.agregarParametro("@Eliminado", material.Eliminado);
                 datos.ejecutarAccion();
@@ -96,7 +97,7 @@ namespace Negocio
                 datos.agregarParametro("@Nombre", nuevo.Nombre);
                 datos.agregarParametro("@Descripcion", nuevo.Descripcion);
                 datos.agregarParametro("@Imagen", nuevo.Imagen);
-                datos.agregarParametro("@IdCategoria", nuevo.Categoria.Id);
+                datos.agregarParametro("@IdCategoria", nuevo.Categoria.Id.ToString());
                 datos.agregarParametro("@Cantidad", nuevo.Cantidad);
                 datos.agregarParametro("@Eliminado", 0);
                 datos.ejecutarAccion();

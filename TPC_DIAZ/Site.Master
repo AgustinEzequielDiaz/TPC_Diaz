@@ -63,17 +63,18 @@
                     <ul class="nav navbar-nav">
                         <li><a runat="server" href="~/">Inicio</a></li>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Materiales
+                       <%-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Usuarios
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="ModificarMaterial.aspx">Modificar</a>
+                                <a class="dropdown-item" href="ModificarMaterial.aspx">Tecnicos</a>
                                 <a class="dropdown-item" href="AgregarMaterial.aspx">Agregar</a>
                             </div>
-                        </li>
+                        </li>--%>
 
-                        <li><a runat="server" href="AgregarUsuario.aspx">Usuarios</a></li>
+                        <li><a runat="server" href="ListarPersonas.aspx">Usuarios</a></li>
                         <li><a runat="server" href="StockMateriales.aspx">Stock</a></li>
+                        <li><a runat="server" href="ListaAutos.aspx">Vehiculos</a></li>
                         <li><a runat="server" href="~/Contact">Contacto</a></li>
                     </ul>
                 </div>

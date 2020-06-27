@@ -106,9 +106,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="AgregarAuto.aspx" />
     <Content Include="AgregarCategoria.aspx" />
     <Content Include="AgregarMaterial.aspx" />
-    <Content Include="AgregarUsuario.aspx" />
+    <Content Include="AgregarPersona.aspx" />
+    <Content Include="AsignacionMateriales.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -128,6 +130,8 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="ListaAutos.aspx" />
+    <Content Include="ListarPersonas.aspx" />
     <Content Include="ModificarMaterial.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -165,6 +169,13 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AgregarAuto.aspx.cs">
+      <DependentUpon>AgregarAuto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgregarAuto.aspx.designer.cs">
+      <DependentUpon>AgregarAuto.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AgregarCategoria.aspx.cs">
       <DependentUpon>AgregarCategoria.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -179,12 +190,12 @@
     <Compile Include="AgregarMaterial.aspx.designer.cs">
       <DependentUpon>AgregarMaterial.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AgregarUsuario.aspx.cs">
-      <DependentUpon>AgregarUsuario.aspx</DependentUpon>
+    <Compile Include="AgregarPersona.aspx.cs">
+      <DependentUpon>AgregarPersona.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AgregarUsuario.aspx.designer.cs">
-      <DependentUpon>AgregarUsuario.aspx</DependentUpon>
+    <Compile Include="AgregarPersona.aspx.designer.cs">
+      <DependentUpon>AgregarPersona.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
@@ -195,6 +206,13 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="AsignacionMateriales.aspx.cs">
+      <DependentUpon>AsignacionMateriales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AsignacionMateriales.aspx.designer.cs">
+      <DependentUpon>AsignacionMateriales.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -211,6 +229,20 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="ListaAutos.aspx.cs">
+      <DependentUpon>ListaAutos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListaAutos.aspx.designer.cs">
+      <DependentUpon>ListaAutos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListarPersonas.aspx.cs">
+      <DependentUpon>ListarPersonas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListarPersonas.aspx.designer.cs">
+      <DependentUpon>ListarPersonas.aspx</DependentUpon>
     </Compile>
     <Compile Include="ModificarMaterial.aspx.cs">
       <DependentUpon>ModificarMaterial.aspx</DependentUpon>

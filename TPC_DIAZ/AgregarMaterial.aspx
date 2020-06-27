@@ -29,7 +29,7 @@
         </div>
             <div class="form-group">
                 <label>Categoria</label>
-                <%--<asp:TextBox ID="CategoriaAgregar" runat="server" CssClass="form-control is-valid" placeholder="Indica la categoria" />--%>
+                <asp:TextBox ID="CategoriaAgregarBox" runat="server" CssClass="form-control is-valid" placeholder="Indica la categoria" />
                 <asp:DropDownList ID="CategoriaAgregar" runat="server"/>
 
                 <%--<select id="CategoriaAgregar" class="form-control">

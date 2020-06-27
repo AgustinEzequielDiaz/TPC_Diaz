@@ -30,11 +30,12 @@ namespace TPC_DIAZ
             {
                 material.Nombre = NombreAgregar.Text;
                 material.Descripcion = DescripcionAgregar.Text;
-                material.Categoria.Nombre = CategoriaAgregar.Text;
+                //material.Categoria.Nombre = CategoriaAgregar.Text;
+                material.Categoria.Id = Convert.ToInt32(CategoriaAgregarBox.Text);
                 material.Cantidad = Convert.ToInt32(CantidadAgregar.Text);
                 material.Imagen = ImagenAgregar.Text;
                 negocio.AgregarMaterial(material);
-                Response.Redirect("Default.aspx");
+                Response.Redirect("StockMateriales.aspx");
             }
             catch (Exception ex)
             {

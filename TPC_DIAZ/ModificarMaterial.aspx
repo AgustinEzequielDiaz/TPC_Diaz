@@ -5,30 +5,30 @@
         <div class="form-row">
             <div class="form-group col-md-6">
                 <label>Nombre</label>
-                <asp:TextBox ID="NombreAgregar" runat="server" CssClass="form-control is-valid" placeholder="Ingrese el nombre" />
+                <asp:TextBox ID="NombreModificar" runat="server" CssClass="form-control is-valid" placeholder="Ingrese el nombre" />
                 <%--<input class="form-control" id="NombreAgregar" placeholder="Ingrese el nombre">--%>
             </div>
             <div class="form-group">
                 <label>Descripcion</label>
-                <asp:TextBox ID="DescripcionAgregar" runat="server" CssClass="form-control is-valid" placeholder="Ingrese una descripcion" />
+                <asp:TextBox ID="DescripcionModificar" runat="server" CssClass="form-control is-valid" placeholder="Ingrese una descripcion" />
                 <%--<input type="text" class="form-control" id="DescripcionAgregar" placeholder="Ingrese una descripcion">--%>
             </div>
         </div>
         <div class="form-row">
         <div class="form-group col-md-6">
             <label>Imagen</label>
-            <asp:TextBox ID="ImagenAgregar" runat="server" CssClass="form-control is-valid" placeholder="Cargar imagen" />
+            <asp:TextBox ID="ImagenModificar" runat="server" CssClass="form-control is-valid" placeholder="Cargar imagen" />
             <%--<input type="text" class="form-control" id="ImagenAgregar" placeholder="Cargar imagen">--%>
         </div>
         <div class="form-group ">
             <label>Cantidad</label>
-            <asp:TextBox ID="CantidadAgregar" runat="server" CssClass="form-control is-valid" placeholder="Indica la cantidad" />
+            <asp:TextBox ID="CantidadModificar" runat="server" CssClass="form-control is-valid" placeholder="Indica la cantidad" />
             <%--<input type="text" class="form-control" id="CantidadAgregar" placeholder="Indica la cantidad">--%>
         </div>
         </div>
             <div class="form-group">
                 <label>Categoria</label>
-                <asp:TextBox ID="CategoriaAgregar" runat="server" CssClass="form-control is-valid" placeholder="Indica la categoria" />
+                <asp:TextBox ID="CategoriaModificar" runat="server" CssClass="form-control is-valid" placeholder="Indica la categoria" />
                 <%--<asp:DropDownList ID="CategoriaAgregar" runat="server"/>--%>
                 <%--<select id="CategoriaAgregar" class="form-control">
                     <option selected>Seleccionar</option>

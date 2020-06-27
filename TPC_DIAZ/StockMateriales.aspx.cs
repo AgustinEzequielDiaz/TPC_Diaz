@@ -21,8 +21,10 @@ namespace TPC_DIAZ
                 lista = negocio.ListarMaterial();
                 if (!IsPostBack)
                 {
-                    dgvCarrito.DataSource = lista;
-                    dgvCarrito.DataBind();
+                    //dgvMaterial.DataSource = lista;
+                    //dgvMaterial.DataBind();
+                    repetidor.DataSource = lista;
+                    repetidor.DataBind();
 
                 }
             }
@@ -39,9 +41,44 @@ namespace TPC_DIAZ
 
         }
 
-        protected void ButtonCategoria_Click(object sender, EventArgs e)
+        protected void ButtonMaterial_Click(object sender, EventArgs e)
         {
-            Response.Redirect("AgregarCategoria.aspx");
+            Response.Redirect("AgregarMaterial.aspx");
+        }
+
+        protected void ButtonEliminarMaterial_Click(object sender, EventArgs e)
+        {
+            MaterialNegocio negocio = new MaterialNegocio();
+            Material Eliminado = new Material();
+ 
+            try
+            {
+                lista = negocio.ListarMaterial();
+                var materialSelec = Convert.ToInt32(((Button)sender).CommandArgument);
+                negocio.EliminarMaterial(materialSelec);
+                Response.Redirect("StockMateriales.aspx");
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
+        protected void ButtonModificarMaterial_Click(object sender, EventArgs e)
+        {
+            MaterialNegocio negocio = new MaterialNegocio();
+            lista = negocio.ListarMaterial();
+            var materialSelec = Convert.ToInt32(((Button)sender).CommandArgument);
+            Material modificar = lista.Find(M => M.Id == materialSelec);
+            Session.Add(Session.SessionID + "MaterialModificar", modificar);
+            Session.Add(Session.SessionID + "IdModificar", materialSelec);
+            Response.Redirect("ModificarMaterial.aspx");
+        }
+
+        protected void AgregarNuevoMaterial_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("AgregarMaterial.aspx");
         }
     }
 }

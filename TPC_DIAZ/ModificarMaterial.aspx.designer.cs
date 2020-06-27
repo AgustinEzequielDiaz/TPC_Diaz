@@ -15,49 +15,49 @@ namespace TPC_DIAZ
     {
 
         /// <summary>
-        /// Control NombreAgregar.
+        /// Control NombreModificar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox NombreAgregar;
+        protected global::System.Web.UI.WebControls.TextBox NombreModificar;
 
         /// <summary>
-        /// Control DescripcionAgregar.
+        /// Control DescripcionModificar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox DescripcionAgregar;
+        protected global::System.Web.UI.WebControls.TextBox DescripcionModificar;
 
         /// <summary>
-        /// Control ImagenAgregar.
+        /// Control ImagenModificar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ImagenAgregar;
+        protected global::System.Web.UI.WebControls.TextBox ImagenModificar;
 
         /// <summary>
-        /// Control CantidadAgregar.
+        /// Control CantidadModificar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox CantidadAgregar;
+        protected global::System.Web.UI.WebControls.TextBox CantidadModificar;
 
         /// <summary>
-        /// Control CategoriaAgregar.
+        /// Control CategoriaModificar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox CategoriaAgregar;
+        protected global::System.Web.UI.WebControls.TextBox CategoriaModificar;
 
         /// <summary>
         /// Control ButtonModificar.

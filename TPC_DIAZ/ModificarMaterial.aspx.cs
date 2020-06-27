@@ -14,6 +14,16 @@ namespace TPC_DIAZ
         public Material material = new Material();
         protected void Page_Load(object sender, EventArgs e)
         {
+            Material material = new Material();
+            material = (Material)Session[Session.SessionID + "MaterialModificar"];
+            if(!IsPostBack)
+            {
+                NombreModificar.Text = material.Nombre;
+                DescripcionModificar.Text = material.Descripcion;
+                CantidadModificar.Text = Convert.ToString(material.Cantidad);
+                ImagenModificar.Text = material.Imagen;
+                CategoriaModificar.Text = Convert.ToString(material.Categoria.Id);
+            }
 
         }
 
@@ -22,11 +32,14 @@ namespace TPC_DIAZ
             MaterialNegocio negocio = new MaterialNegocio();
             try
             {
-                material.Nombre = NombreAgregar.Text;
-                material.Descripcion = DescripcionAgregar.Text;
-                material.Cantidad = Convert.ToInt32(CantidadAgregar.Text);
-                material.Imagen = ImagenAgregar.Text;
-                material.Categoria.Nombre = CategoriaAgregar.Text;
+                material.Id = Convert.ToInt32(Session[Session.SessionID + "IdModificar"]);
+                material.Nombre = NombreModificar.Text;
+                material.Descripcion = DescripcionModificar.Text;
+                material.Cantidad = Convert.ToInt32(CantidadModificar.Text);
+                material.Imagen = ImagenModificar.Text;
+                material.Categoria.Id = Convert.ToInt32(CategoriaModificar.Text);
+                negocio.ModificarMaterial(material);
+                Response.Redirect("StockMateriales");
             }
             catch (Exception ex)
             {

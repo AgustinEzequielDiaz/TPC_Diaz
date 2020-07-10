@@ -11,8 +11,14 @@ namespace TPC_DIAZ
 {
     public partial class ListarPersonas : System.Web.UI.Page
     {
-        public List<Persona> lista { get; set; }
+        public List<Persona> listaPersonas { get; set; }
         public Persona persona = new Persona();
+        public Direccion direccion = new Direccion();
+        public Contacto contacto = new Contacto();
+        public UsuarioNegocio negocioUsuario = new UsuarioNegocio();
+        public PersonaNegocio negocioPersona = new PersonaNegocio();
+        public DireccionNegocio negocioDireccion = new DireccionNegocio();
+        public ContactoNegocio negocioContacto = new ContactoNegocio();
         protected void Page_Load(object sender, EventArgs e)
         {
             PersonaNegocio negocio = new PersonaNegocio();
@@ -20,12 +26,9 @@ namespace TPC_DIAZ
             {
                 if (!IsPostBack)
                 {
-                    lista = negocio.ListarPersona();
-                    dgvPersona.DataSource = lista;
+                    listaPersonas = negocio.ListarPersona();
+                    dgvPersona.DataSource = listaPersonas;
                     dgvPersona.DataBind();
-                    //repetidor.DataSource = lista;
-                    //repetidor.DataBind();
-
                 }
             }
             catch (Exception)
@@ -37,8 +40,7 @@ namespace TPC_DIAZ
 
         protected void dgvPersona_SelectedIndexChanged(object sender, EventArgs e)
         {
-
-
+           Response.Redirect("AgregarPersona.aspx");
         }
 
         protected void ButtonPersona_Click(object sender, EventArgs e)
@@ -46,24 +48,55 @@ namespace TPC_DIAZ
             Response.Redirect("AgregarPersona.aspx");
         }
 
-        //protected void dgvPersona_RowCommand(object sender, GridViewCommandEventArgs e)
-        //{
+        protected void dgvPersona_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
 
-        //    int index = Convert.ToInt32(e.CommandArgument);
-        //    string IDSeleccionado = dgvPersona.Rows[index].Cells[0].Text;
-        //    int idSeleccionado = Convert.ToInt32(IDSeleccionado);
-        //    //if (carro.producto.Exists(A => A.id == idSeleccionado))
-        //    //{
-        //        //persona = carro.producto.Find(J => J.id == idSeleccionado);
-        //        //carro.cantidad--;
-        //        //carro.Total -= Articulo.Precio;
-        //        //carro.producto.Remove(Articulo);
-        //        Session.Add(Session.SessionID + "persona", persona);
-        //        Session.Add(Session.SessionID + "Nombre", persona.Nombre);
-        //        Session.Add(Session.SessionID + "Apellido", persona.Apellido);
-        //        //Response.Redirect("Carrodecompras.aspx");
+            //int index = convert.toint32(e.commandargument);
+            //string idseleccionado = dgvpersona.rows[index].cells[0].text;
+            //int idseleccionado = convert.toint32(idseleccionado);
+            ////if (carro.producto.exists(a => a.id == idseleccionado))
+            ////{
+            ////persona = carro.producto.find(j => j.id == idseleccionado);
+            ////carro.cantidad--;
+            ////carro.total -= articulo.precio;
+            ////carro.producto.remove(articulo);
+            //session.add(session.sessionid + "persona", persona);
+            //session.add(session.sessionid + "nombre", persona.nombre);
+            //session.add(session.sessionid + "apellido", persona.apellido);
+            //response.redirect("carrodecompras.aspx");
 
-        //    //}
-        //}
+            //}
+
+            if (e.CommandName == "Eliminar")
+            {
+                int index = Convert.ToInt32(e.CommandArgument);
+                int idPersona = Convert.ToInt32(dgvPersona.Rows[index].Cells[0].Text);
+                negocioPersona.EliminarPersona(idPersona);
+                Response.Redirect("ListarPersonas.aspx");
+            }
+
+            //if (e.CommandName == "Modificar")
+            //{
+            //    ListaUsuario = negocioUsuario.ListarUsuario();
+            //    listaPersonas = negocioPersona.ListarPersona();
+            //    listaDireccion = negocioDireccion.ListarDireccion();
+            //    listaContacto = negocioContacto.ListarContacto();
+            //    int index = Convert.ToInt32(e.CommandArgument);
+            //    int Personaselec = Convert.ToInt32(dgvPersona.Rows[index].Cells[0].Text);
+            //    //persona = listaPersonas.Find(p => p.IdPersona == Personaselec);
+            //    user = ListaUsuario.Find(p => p.IdUsuario = Personaselec);
+            //    direccion = listaDireccion.Find(d => d.IdDireccion == Personaselec);
+            //    contacto = listaContacto.Find(c => c.IdContacto == Personaselec);
+            //    Session.Add(Session.SessionID + "PersonaModificar", persona);
+            //    Session.Add(Session.SessionID + "IdModificarPersona", Personaselec);
+            //    Session.Add(Session.SessionID + "IdModificarDireccion", Personaselec);
+            //    Session.Add(Session.SessionID + "IdModificarContacto", Personaselec);
+            //    negocioPersona.ModificarPersona(persona);
+            //    negocioDireccion.ModificarDireccion(direccion);
+            //    negocioContacto.ModificarContacto(contacto);
+            //    Response.Redirect("ModificarPersona.aspx");
+            //}
+        }
+
     }
 }

@@ -15,15 +15,6 @@ namespace TPC_DIAZ
     {
 
         /// <summary>
-        /// Control dgvAutos.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView dgvAutos;
-
-        /// <summary>
         /// Control ButtonAuto.
         /// </summary>
         /// <remarks>
@@ -31,5 +22,14 @@ namespace TPC_DIAZ
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button ButtonAuto;
+
+        /// <summary>
+        /// Control dgvAutos.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView dgvAutos;
     }
 }

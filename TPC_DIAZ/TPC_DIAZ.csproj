@@ -110,6 +110,7 @@
     <Content Include="AgregarCategoria.aspx" />
     <Content Include="AgregarMaterial.aspx" />
     <Content Include="AgregarPersona.aspx" />
+    <Content Include="AgregarTipoUsuario.aspx" />
     <Content Include="AsignacionMateriales.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -132,7 +133,18 @@
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="ListaAutos.aspx" />
     <Content Include="ListarPersonas.aspx" />
+    <Content Include="ListarUsuarios.aspx" />
+    <Content Include="ListarUsuariosCompleto.aspx" />
+    <Content Include="ListaStockAuto.aspx" />
+    <Content Include="ListaTipoUsuario.aspx" />
+    <Content Include="LogIn.aspx" />
+    <Content Include="ModificarAuto.aspx" />
+    <Content Include="ModificarCuenta.aspx" />
     <Content Include="ModificarMaterial.aspx" />
+    <Content Include="ModificarPersona.aspx" />
+    <Content Include="ModificarUsuario.aspx" />
+    <Content Include="Registrar.aspx" />
+    <Content Include="Registros.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -197,6 +209,13 @@
     <Compile Include="AgregarPersona.aspx.designer.cs">
       <DependentUpon>AgregarPersona.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AgregarTipoUsuario.aspx.cs">
+      <DependentUpon>AgregarTipoUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgregarTipoUsuario.aspx.designer.cs">
+      <DependentUpon>AgregarTipoUsuario.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -244,6 +263,55 @@
     <Compile Include="ListarPersonas.aspx.designer.cs">
       <DependentUpon>ListarPersonas.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ListarUsuarios.aspx.cs">
+      <DependentUpon>ListarUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListarUsuarios.aspx.designer.cs">
+      <DependentUpon>ListarUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListarUsuariosCompleto.aspx.cs">
+      <DependentUpon>ListarUsuariosCompleto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListarUsuariosCompleto.aspx.designer.cs">
+      <DependentUpon>ListarUsuariosCompleto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListaStockAuto.aspx.cs">
+      <DependentUpon>ListaStockAuto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListaStockAuto.aspx.designer.cs">
+      <DependentUpon>ListaStockAuto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListaTipoUsuario.aspx.cs">
+      <DependentUpon>ListaTipoUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListaTipoUsuario.aspx.designer.cs">
+      <DependentUpon>ListaTipoUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogIn.aspx.cs">
+      <DependentUpon>LogIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogIn.aspx.designer.cs">
+      <DependentUpon>LogIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarAuto.aspx.cs">
+      <DependentUpon>ModificarAuto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModificarAuto.aspx.designer.cs">
+      <DependentUpon>ModificarAuto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarCuenta.aspx.cs">
+      <DependentUpon>ModificarCuenta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModificarCuenta.aspx.designer.cs">
+      <DependentUpon>ModificarCuenta.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ModificarMaterial.aspx.cs">
       <DependentUpon>ModificarMaterial.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -251,7 +319,35 @@
     <Compile Include="ModificarMaterial.aspx.designer.cs">
       <DependentUpon>ModificarMaterial.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ModificarPersona.aspx.cs">
+      <DependentUpon>ModificarPersona.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModificarPersona.aspx.designer.cs">
+      <DependentUpon>ModificarPersona.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarUsuario.aspx.cs">
+      <DependentUpon>ModificarUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModificarUsuario.aspx.designer.cs">
+      <DependentUpon>ModificarUsuario.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registrar.aspx.cs">
+      <DependentUpon>Registrar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registrar.aspx.designer.cs">
+      <DependentUpon>Registrar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registros.aspx.cs">
+      <DependentUpon>Registros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registros.aspx.designer.cs">
+      <DependentUpon>Registros.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

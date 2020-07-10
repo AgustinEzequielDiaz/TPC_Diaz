@@ -6,25 +6,24 @@ namespace Dominio
 {
     public class Persona
     {
-
         public Persona()
         {
+            //IdUsuario = 0;
             Nombre = "";
             Apellido = "";
             Imagen = "";
-            DNI = 0;
-            FechaNac = System.DateTime.Today;
-            FechaReg = System.DateTime.Now;
-            Eliminado = 0;
+            DNI = 000000;
+            direccion = new Direccion();
+            contacto = new Contacto();
+            //FechaNac = System.DateTime.Now; 
         }
-
-        public int IdPersona { get; set; }
         public string Nombre { get; set; }
         public string Apellido { get; set; }
         public string Imagen { get; set; }
-        public int DNI { get; set; }
-        public DateTime FechaNac { get; set; }
-        public DateTime FechaReg { get; set; }
-        public int Eliminado { get; set; }
+        public long DNI { get; set; }
+        public Direccion direccion { get; set; }
+        public Contacto contacto { get; set; }
+        //public DateTime FechaNac { get; set; }
+       
     }
 }

@@ -20,7 +20,7 @@ namespace TPC_DIAZ
             {
                 NombreModificar.Text = material.Nombre;
                 DescripcionModificar.Text = material.Descripcion;
-                CantidadModificar.Text = Convert.ToString(material.Cantidad);
+                CantidadModificar.Text = Convert.ToString(material.Stock);
                 ImagenModificar.Text = material.Imagen;
                 CategoriaModificar.Text = Convert.ToString(material.Categoria.Id);
             }
@@ -35,7 +35,7 @@ namespace TPC_DIAZ
                 material.Id = Convert.ToInt32(Session[Session.SessionID + "IdModificar"]);
                 material.Nombre = NombreModificar.Text;
                 material.Descripcion = DescripcionModificar.Text;
-                material.Cantidad = Convert.ToInt32(CantidadModificar.Text);
+                material.Stock = Convert.ToInt32(CantidadModificar.Text);
                 material.Imagen = ImagenModificar.Text;
                 material.Categoria.Id = Convert.ToInt32(CategoriaModificar.Text);
                 negocio.ModificarMaterial(material);

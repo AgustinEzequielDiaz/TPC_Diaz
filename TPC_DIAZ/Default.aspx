@@ -1,11 +1,11 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="TPC_DIAZ._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
-    <h1>ASESORAMIENTO EN SEGURIDAD ELECTRONICA</h1>
+        
+    <h1 style="color:#000000" class="text-center">ASESORAMIENTO EN SEGURIDAD ELECTRONICA</h1>
     <div class="row">
         <div class="col">
-            <h3>Instalaciones</h3>
+            <h3 style="color:#000000">Instalaciones</h3>
             <div id="carouselExampleControls" class="carousel slide w-50 h-50" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -29,7 +29,7 @@
             </div>
         </div>
         <div class="col">
-            <h3>Service</h3>
+            <h3 style="color:#000000">Service</h3>
             <div id="carouselService" class="carousel slide w-50 h-50" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -53,7 +53,7 @@
             </div>
         </div>
          <div class="col">
-            <h3>Deposito</h3>
+            <h3 style="color:#000000">Deposito</h3>
             <div id="carouselDeposito" class="carousel slide w-50 h-50" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">

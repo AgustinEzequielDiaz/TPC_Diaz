@@ -25,15 +25,15 @@ namespace Negocio
                     aux.Nombre = datos.lector.GetString(1);
                     aux.Descripcion = datos.lector.GetString(2);
                     aux.Categoria = new Categoria();
-                    aux.Categoria.Nombre = (string)datos.lector["Nombre"];
-                    aux.Categoria.Id = (int)datos.lector["IdCategoria"];
+                    aux.Categoria.Nombre = (string)datos.lector["NombreCat"];
+                    aux.Categoria.Id = (int)datos.lector["IdCat"];
                     aux.Categoria.Eliminado = (int)datos.lector["Eliminado"];
                     aux.Imagen = datos.lector.GetString(4);
-                    aux.Cantidad = datos.lector.GetInt32(5);
+                    aux.Stock = datos.lector.GetInt32(5);
                     aux.Eliminado = datos.lector.GetInt32(6);
                    
                     ListadoMaterial.Add(aux);
-
+                    
                 }
                 return ListadoMaterial;
             }
@@ -76,7 +76,7 @@ namespace Negocio
                 datos.agregarParametro("@Descripcion", material.Descripcion);
                 datos.agregarParametro("@Imagen", material.Imagen);
                 datos.agregarParametro("@IdCategoria", material.Categoria.Id);
-                datos.agregarParametro("@Cantidad", material.Cantidad);
+                datos.agregarParametro("@Cantidad", material.Stock);
                 datos.agregarParametro("@Eliminado", material.Eliminado);
                 datos.ejecutarAccion();
             }
@@ -98,7 +98,7 @@ namespace Negocio
                 datos.agregarParametro("@Descripcion", nuevo.Descripcion);
                 datos.agregarParametro("@Imagen", nuevo.Imagen);
                 datos.agregarParametro("@IdCategoria", nuevo.Categoria.Id.ToString());
-                datos.agregarParametro("@Cantidad", nuevo.Cantidad);
+                datos.agregarParametro("@Cantidad", nuevo.Stock);
                 datos.agregarParametro("@Eliminado", 0);
                 datos.ejecutarAccion();
 

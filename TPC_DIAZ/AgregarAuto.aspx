@@ -13,6 +13,10 @@
                 <asp:TextBox ID="ModeloAgregar" runat="server" CssClass="form-control is-valid" placeholder="Ingrese el modelo" />
                 <%--<input type="text" class="form-control" id="DescripcionAgregar" placeholder="Ingrese una descripcion">--%>
             </div>
+             <div class="form-group">
+                <label>Conductor</label>               
+                <asp:DropDownList ID="DdlConductor" Cssclass="form-control is-valid" runat="server" OnSelectedIndexChanged="DdlConductor_SelectedIndexChanged"  />
+            </div>
         </div>
         </div>
          <asp:Button ID="ButtonAgregar" runat="server" Text="Button" OnClick="ButtonAgregar_Click" />

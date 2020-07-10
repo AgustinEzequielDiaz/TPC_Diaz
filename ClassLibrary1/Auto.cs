@@ -11,8 +11,10 @@ namespace Dominio
             Modelo = "";
             Patente = "";
             Eliminado = 0;
+            //Conductor = new Usuario();
         }
         public int IdAuto { get; set; }
+        //public Usuario Conductor{ get; set; }
         public string Modelo { get; set; }
         public string Patente { get; set; }
         public int Eliminado { get; set; }

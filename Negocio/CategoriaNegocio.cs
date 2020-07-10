@@ -15,7 +15,7 @@ namespace Negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearQuery("select C.Id, C.Nombre, C.Eliminado from CATEGORIAS as C");
+                datos.setearSP("spListarCategorias");
                 datos.ejecutarLector();
                 while (datos.lector.Read())
                 {

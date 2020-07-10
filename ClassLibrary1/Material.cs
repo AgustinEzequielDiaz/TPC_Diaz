@@ -13,6 +13,7 @@ namespace Dominio
             Imagen = "";
             Categoria = new Categoria();
             Cantidad = 0;
+            Stock = 1;
             Eliminado = 0;
         }
 
@@ -22,6 +23,7 @@ namespace Dominio
         public string Imagen { get; set; }
         public Categoria Categoria { get; set; }
         public int Cantidad { get; set; }
+        public int Stock { get; set; }
         public int Eliminado { get; set; }
 
         public override string ToString()

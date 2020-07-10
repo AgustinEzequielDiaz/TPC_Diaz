@@ -11,106 +11,106 @@ namespace TPC_DIAZ
 {
 
 
-    public partial class AgregarUsuario
+    public partial class AgregarPersona
     {
 
         /// <summary>
-        /// Control NombreUsuario.
+        /// Control NombrePersona.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox NombreUsuario;
+        protected global::System.Web.UI.WebControls.TextBox NombrePersona;
 
         /// <summary>
-        /// Control ApellidoUsuario.
+        /// Control ApellidoPersona.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ApellidoUsuario;
+        protected global::System.Web.UI.WebControls.TextBox ApellidoPersona;
 
         /// <summary>
-        /// Control DNIUsuario.
+        /// Control DNIPersona.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox DNIUsuario;
+        protected global::System.Web.UI.WebControls.TextBox DNIPersona;
 
         /// <summary>
-        /// Control FechaNacUsuario.
+        /// Control CallePersona.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox FechaNacUsuario;
+        protected global::System.Web.UI.WebControls.TextBox CallePersona;
 
         /// <summary>
-        /// Control CalleUsuario.
+        /// Control NumeroPersona.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox CalleUsuario;
+        protected global::System.Web.UI.WebControls.TextBox NumeroPersona;
 
         /// <summary>
-        /// Control AlturaUsuario.
+        /// Control CPPersona.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox AlturaUsuario;
+        protected global::System.Web.UI.WebControls.TextBox CPPersona;
 
         /// <summary>
-        /// Control CPUsuario.
+        /// Control LocalidadPersona.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox CPUsuario;
+        protected global::System.Web.UI.WebControls.TextBox LocalidadPersona;
 
         /// <summary>
-        /// Control LocalidadUsuario.
+        /// Control ProvinciaPersona.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox LocalidadUsuario;
+        protected global::System.Web.UI.WebControls.TextBox ProvinciaPersona;
 
         /// <summary>
-        /// Control EmailUsuario.
+        /// Control EmailPersona.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox EmailUsuario;
+        protected global::System.Web.UI.WebControls.TextBox EmailPersona;
 
         /// <summary>
-        /// Control TelefonoUsuario.
+        /// Control TelefonoPersona.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TelefonoUsuario;
+        protected global::System.Web.UI.WebControls.TextBox TelefonoPersona;
 
         /// <summary>
-        /// Control ButtonAgregarUsuario.
+        /// Control ButtonAgregarPersona.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ButtonAgregarUsuario;
+        protected global::System.Web.UI.WebControls.Button ButtonAgregarPersona;
     }
 }

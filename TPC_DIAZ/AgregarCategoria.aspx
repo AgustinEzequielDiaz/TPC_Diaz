@@ -13,5 +13,6 @@
         </div>
         </div>
          <asp:Button ID="ButtonAgregarCategoria" runat="server" Text="Button" OnClick="ButtonAgregarCategoria_Click" />
+
        <%-- <button type="submit" class="btn btn-primary">Agregar</button>--%>
 </asp:Content>

@@ -16,7 +16,7 @@ namespace Negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearSP("spListarAuto");
+                datos.setearSP("spListarVehiculo");
                 datos.ejecutarLector();
                 while (datos.lector.Read())
                 {
@@ -47,7 +47,7 @@ namespace Negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearSP("spEliminarAuto");
+                datos.setearSP("spEliminarVehiculo");
                 datos.agregarParametro("@IdAuto", id);
                 datos.ejecutarAccion();
             }
@@ -64,7 +64,7 @@ namespace Negocio
 
             try
             {
-                datos.setearSP("spModificarAuto");
+                datos.setearSP("spModificarVehiculo");
                 datos.agregarParametro("@Patente", auto.Patente);
                 datos.agregarParametro("@IdAuto", auto.IdAuto);
                 datos.agregarParametro("@Modelo", auto.Modelo);
@@ -83,8 +83,7 @@ namespace Negocio
 
             try
             {
-                datos.setearSP("spAgregarAuto");
-
+                datos.setearSP("spAgregarVehiculo");
                 datos.agregarParametro("@Patente", nuevo.Patente);
                 datos.agregarParametro("@Modelo", nuevo.Modelo);
                 datos.agregarParametro("@Eliminado", 0);
@@ -97,6 +96,23 @@ namespace Negocio
             }
 
 
+        }
+
+        public void AgregarConductorXAuto(Auto vehiculo, int IdUsuario)
+        {
+            AccesoDatos datos = new AccesoDatos();
+
+            try
+            {
+                datos.setearSP("spAgregarConductorXVehiculo");
+                datos.agregarParametro("@IdUsuario", IdUsuario);
+                datos.agregarParametro("@IdVehiculo", vehiculo.IdAuto);
+                datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 }

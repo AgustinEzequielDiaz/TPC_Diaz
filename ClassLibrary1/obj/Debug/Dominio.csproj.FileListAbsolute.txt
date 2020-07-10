@@ -10,3 +10,15 @@ C:\Users\Usuario\Desktop\TPC_DIAZ\ClassLibrary1\obj\Debug\Dominio.csprojAssembly
 C:\Users\Usuario\Desktop\TPC_DIAZ\ClassLibrary1\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
 C:\Users\Usuario\Desktop\TPC_DIAZ\ClassLibrary1\obj\Debug\ClassLibrary1.dll
 C:\Users\Usuario\Desktop\TPC_DIAZ\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
+C:\Users\Agustin\Desktop\TPC_Diaz-master\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\Users\Agustin\Desktop\TPC_Diaz-master\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Users\Agustin\Desktop\TPC_Diaz-master\ClassLibrary1\obj\Debug\Dominio.csprojAssemblyReference.cache
+C:\Users\Agustin\Desktop\TPC_Diaz-master\ClassLibrary1\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Agustin\Desktop\TPC_Diaz-master\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Users\Agustin\Desktop\TPC_Diaz-master\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
+C:\Users\Usuario\Desktop\TPC_Diaz-master\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\Users\Usuario\Desktop\TPC_Diaz-master\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Users\Usuario\Desktop\TPC_Diaz-master\ClassLibrary1\obj\Debug\Dominio.csprojAssemblyReference.cache
+C:\Users\Usuario\Desktop\TPC_Diaz-master\ClassLibrary1\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\TPC_Diaz-master\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Users\Usuario\Desktop\TPC_Diaz-master\ClassLibrary1\obj\Debug\ClassLibrary1.pdb

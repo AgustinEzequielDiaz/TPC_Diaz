@@ -2,8 +2,11 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-    <h1>Lista de Materiales</h1>
-    <asp:Button ID="AgregarNuevoMaterial" ControlStyle-CssClass="btn btn-success mb-4 btn-sm" CommandName="AgregarMaterial" runat="server" Text="Agregar material" OnClick="AgregarNuevoMaterial_Click" />
+    <label style="margin-top: 50px; font-size:x-large; font-style:inherit">Lista de Materiales</label>
+    <asp:Button ID="AgregarNuevoMaterial" style="margin-top: 15px;" ControlStyle-CssClass="btn btn-success mb-4 btn-sm" CommandName="AgregarMaterial" runat="server" Text="Agregar material" OnClick="AgregarNuevoMaterial_Click" />
+  <%--  <div>   
+        <asp:TextBox ID="txtFiltrar" CssClass="mt-5" runat="server" placeholder="Presione 'Enter' para filtrar" OnTextChanged="Filtrar_TextChanged" />
+    </div>--%>
     <style>
         .oculto {
             display: none;
@@ -26,24 +29,29 @@
     <asp:Table ID="Table1" runat="server" class="table table-sm table-dark">
     </asp:Table>--%>
 
-    <div class="card mb-3" style="max-width: 340px; margin-left: 10px; margin-right: 10px">
+    <div class="card-columns" style="column-count:3;">
         <asp:Repeater runat="server" ID="repetidor">
             <ItemTemplate>
                 <div class="row no-gutters">
-                    <div class="col-md-4">
+                    <div class="col-md-4">                    
                         <img src="<%#Eval("Imagen") %>" class="card-img" alt="..." style="max-width: 100px; max-height: 100px; margin-left: 30px; margin-right: 30px; margin-top: 10px">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
                             <h5 class="card-title" style="font-size: 10px"><%#Eval("Nombre")%></h5>
                             <p class="card-text" style="font-size: 10px"><%#Eval("Descripcion")%></p>
-                            <p class="card-text" style="font-size: 10px">Cantidad:<%#Eval("Cantidad")%></p>
-                            <p class="card-text" style="font-size: 10px"><small class="text-muted"><%#Eval("Categoria.Id")%></small></p>
-                            <asp:Button ID="Button1" CommandArgument='<%#Eval("Id")%>' ControlStyle-CssClass="btn btn-warning mb-4 btn-sm" CommandName="IdMaterialModificar" runat="server" Text="Modificar" OnClick="ButtonModificarMaterial_Click" />
-                            <asp:Button ID="Button2" CommandArgument='<%#Eval("Id")%>' ControlStyle-CssClass="btn btn-danger mb-4 btn-sm" CommandName="IdMaterialEliminado" runat="server" Text="Eliminar" OnClick="ButtonEliminarMaterial_Click" />
+                            <p class="card-text" style="font-size: 10px">Cantidad:<%#Eval("Stock")%></p>
+                            <p class="card-text" style="font-size: 10px"><small class="text-muted"><%#Eval("Categoria.Nombre")%></small></p>
                         </div>
                     </div>
-                </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <asp:Button ID="btnModificar" CommandArgument='<%#Eval("Id")%>' ControlStyle-CssClass="btn btn-warning mb-4 btn-sm" CommandName="IdMaterialModificar" runat="server" Text="Modificar" OnClick="ButtonModificarMaterial_Click" />
+                            <asp:Button ID="btnEliminar" CommandArgument='<%#Eval("Id")%>' ControlStyle-CssClass="btn btn-danger mb-4 btn-sm" CommandName="IdMaterialEliminado" runat="server" Text="Eliminar" OnClick="ButtonEliminarMaterial_Click" /> 
+                            <asp:Button ID="btnAsignar" CommandArgument='<%#Eval("Id")%>' ControlStyle-CssClass="btn btn-info mb-4 btn-sm" CommandName="IdMaterialAsignado" runat="server" Text="Asignar" OnClick="btnAsignar_Click"/> 
+                        </div>
+                    </div>
+                </div>                
             </ItemTemplate>
         </asp:Repeater>
     </div>
